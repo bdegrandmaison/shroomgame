@@ -4,7 +4,7 @@ var adversaire;
 
 window.addEventListener('DOMContentLoaded', function() {
 
-  client = io('http://localhost:8080');
+  client = io.connect(window.location.hostname);
   joueur = {};
   adversaire = {};
 
